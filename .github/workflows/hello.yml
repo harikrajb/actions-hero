@@ -21,3 +21,6 @@ jobs:
 
       - name: Step 3 - Show directory
         run: pwd
+
+      - name: Step 4 - Goodbye
+        run: echo "Goodbye from GitHub Actions"
