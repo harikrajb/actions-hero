@@ -1,0 +1,23 @@
+name: Lab 1 - Hello GitHub Actions
+
+on:
+  push:
+    branches:
+      - feature/github-actions-lab1
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Step 1 - Hello
+        run: echo "Hello from GitHub Actions"
+
+      - name: Step 2 - Show OS
+        run: uname -a
+
+      - name: Step 3 - Show directory
+        run: pwd
